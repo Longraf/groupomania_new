@@ -12,3 +12,6 @@ Hot-Takes is the sixth project from the web developer formation of Openclassroom
 
 Use nodemon server to launch server from the backend folder and npm start in the frontend folder.
 Create a .env file with the variables SECRET_CONNECTION (MongoDB database connection) and SECRET_TOKEN (secret connection token for authentification).
+
+Use nodemon server to launch server from the backend folder and npm start in the frontend folder.
+Create a .env file with the variables SECRET_CONNECTION (MongoDB database connection) and SECRET_TOKEN (secret connection token for authentification).
