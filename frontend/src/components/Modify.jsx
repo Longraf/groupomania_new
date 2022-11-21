@@ -73,11 +73,11 @@ const Modify = () => {
           <InputStyle
             type="text"
             name="titre"
-            placeholder={post.name}
+            value={post.name}
             {...register("name", { required: true })}
           />
           <Textarea
-            placeholder={post.description}
+            value={post.description}
             rows="8"
             {...register("description", { required: true })}
           />

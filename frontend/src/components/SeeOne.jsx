@@ -56,7 +56,7 @@ const SeeOne = () => {
     <>
       
         <NavShape>
-          <NavTitleSee>Voir</NavTitleSee>
+          <NavTitleSee>Post</NavTitleSee>
           <Link style={linkStyle} to="/my-posts"><NavElement>Voir les publications</NavElement></Link>
           <NavElementLogout onClick={logout}>Se déconnecter</NavElementLogout>
           <NavElementDelete onClick={deleteAccount}>Supprimer son compte</NavElementDelete>
