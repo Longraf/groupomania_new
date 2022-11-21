@@ -49,7 +49,7 @@ exports.delete = (req, res, next) => {
 };
 
 exports.displayOne = (req, res, next) => {
-  console.log("test du getOnePost");
+  //console.log("test getOnePost");
   Post.findOne({
     _id: req.params.id,
   })
@@ -93,7 +93,7 @@ exports.modify = (req, res, next) => {
 };
 
 exports.displayAll = (req, res, next) => {
-  console.log("Affichage de tous les posts");
+  //console.log("Affichage de tous les posts");
   Post.find().sort({createdAt: -1})
     .then((posts) => {
       console.log(posts[0]);

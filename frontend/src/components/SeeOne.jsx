@@ -25,7 +25,7 @@ const SeeOne = () => {
   };
   const params = useParams();
   const navigate = useNavigate();
-  console.log(params)
+  //console.log(params)
   //const noteId = window.location.search.split("?id=").join("");
   const [post, setPost] = useState([]);
   const [isAdmin, setIsAdmin] = useState(false)
@@ -33,11 +33,11 @@ const SeeOne = () => {
   useEffect(() => {
     axios.get(`http://localhost:4000/api/posts/${params.id}`).then((res) => {
       setPost(res.data);
-      console.log(res.data, "Ici le post");
+      //console.log(res.data, "Ici le post");
     });
     axios.get(`http://localhost:4000/api/auth/${localStorage.userId}`).then((res) => {
       setIsAdmin(res.data.admin);
-      console.log(res.data, "deuxième res");
+      //console.log(res.data, "deuxième res");
     })
   }, []);
 

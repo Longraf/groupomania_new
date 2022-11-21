@@ -33,7 +33,7 @@ const Notes = () => {
       .get("http://localhost:4000/api/posts")
       .then((res) => {
         setPosts(res.data);
-        console.log(res.data)
+        //console.log(res.data)
 
       })
       .catch((err) => {
