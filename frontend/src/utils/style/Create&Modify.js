@@ -16,7 +16,7 @@ import colors from "./colors";
 //   width: 100%;
 // `;
 // Works for both
-export const FormStyle = styled.form`
+export const FormStyle = styled.form` // TODO не знаю почему так стили подключаются но обычно они прописываются в файлах postCSS / SASS / LESS возможно это какие то реатовские приколы которых я не знаю
   position: absolute;
   left: 30%;
   top: 10%;

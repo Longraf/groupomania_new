@@ -27,6 +27,11 @@ const LikesDislikes = ({ post }) => {
       } else {
         setLike(like + 1)
       }
+      // TODO ниже приведу пример как я бы это записал
+      likeActive ? setLike(like - 1) : setLike(like + 1)
+      // TODO или же так
+      const newLike = likeActive ? like - 1 : like + 1
+      setLike(newLike)
     })
       .catch((error) => {
         console.log(error)

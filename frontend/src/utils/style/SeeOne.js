@@ -25,7 +25,7 @@ export const PostCard = styled.div`
     position: absolute;
     left: -10%;
     top: 15%;
-    margin-right: none;
+    margin-right: none; // TODO нет значения у margin-right "none" есть "0"
     margin-left: none;
   }
   @media (max-width: 375px) {
@@ -59,7 +59,7 @@ export const PostDescription = styled.p`
   color: white;
   font-size: 30px;
   font-weight: 600;
-  @media (max-width: 820px) {
+  @media (max-width: 820px) { // TODO лучше для @media создать несколько breakpoint и их везде использоватьс можно 2 максимум 4 т.к. обычно дизайн отрисовывается в 2-3 вариантах ширины экрана
     font-size: 19px;
     left: -17%;
   }
@@ -77,7 +77,7 @@ export const PostImage = styled.img`
   max-width: 500px;
   min-width: 500px;
   max-height: 500px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px; // TODO можно короче border-radius: 10px
   margin-top: 20px;
   @media (max-width: 632px) {
     left: -15%;

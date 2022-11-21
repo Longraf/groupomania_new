@@ -113,7 +113,7 @@ export const InputStyle = styled.input`
   &::placeholder {
     color: black};
   }
-  &::focus {
+  &::focus { //TODO у фокуса префикс такой же как у ховера &:focus
     outline: none;
   }
   @media (max-width: 820px) {

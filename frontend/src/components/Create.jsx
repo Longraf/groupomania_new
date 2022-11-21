@@ -5,7 +5,7 @@ import { AiOutlineCheck } from 'react-icons/ai'
 import React, { useRef } from 'react'
 import {  FormStyle, InputStyle, Textarea, ValidateStyle, LabelStyle, InputNone } from "../utils/style/Create&Modify"
 import { NavSeePosts, NavTitle, NavShape, NavElementLogoutCreate, NavElementDeleteCreate } from "../utils/style/Navbars"
-import { TbWorld } from "react-icons/tb"
+import { TbWorld } from "react-icons/tb" // TODO убрать неиспользуемые импорты
 
 const Edit = () => {
 
@@ -28,14 +28,14 @@ const Edit = () => {
     color: "black",
   };
   const fileInput = useRef();
-  const selectFile = () => {
+  const selectFile = () => { // TODO Убрать неиспользуемые константы
     fileInput.current.click();
   }
   const navigate = useNavigate();
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-
+  const { register, handleSubmit, watch, formState: { errors } } = useForm(); // TODO watch и errors неиспользуются
+            // TODO старайся придерживаться одного стиля, перед функциями/константами либо всегда делай отступ или никогда
   const onSubmit = data => {
-    console.log(data)
+    console.log(data) // TODO убрать неиспользуемые импорты
     const formData = new FormData();
     formData.append("image", data.imageUrl[0])
     formData.append("name", data.name)
@@ -71,6 +71,7 @@ const Edit = () => {
   )
 }
 /*
-<input type="file" style={{ "display": "none" }} ref={fileInput} />
+// TODO ниспользуемые комменты отсавлять "набудующее" почти всегда безсмысленно в 98% случаев это лишь мусор который ты никогда не посмотришь
+<input type="file" style={{ "display": "none" }} ref={fileInput} /> //
             <button onClick={selectFile}>Image</button>*/
 export default Edit;

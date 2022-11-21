@@ -41,6 +41,8 @@ const Notes = () => {
       });
   }, []);
 
+
+  // TODO на будующее лучше ничего не оставлять
   /* const [user, setUser] = useState([]);
 useEffect(() => {
 axios

@@ -35,12 +35,25 @@ const Home = () => {
         <LoginCard>
           <MainTitle>Se connecter</MainTitle>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <InputStyle type="text" name="email" placeholder="email" rules={{ required: true }} {...register('email', { required: true })}></InputStyle>
+            <InputStyle
+              type="text"
+              name="email"
+              placeholder="email"
+              rules={
+                { required: true }} {...register('email', { required: true })
+              }
+            />
+            // TODO посмотри на компонент сверху и снизу, что лучше читается ?
             <InputStyle type="password" name="password" placeholder="mot de passe" rules={{ required: true }} {...register('password', { required: true })}></InputStyle>
             <ValidateStyle type="submit" name="valider" value="Valider"></ValidateStyle>
           </form>
         </LoginCard>
       </SuperContainer>
+
+      <RedirectSignup>Pas encore inscrit ? Créez un compte
+        <Link style={linkStyle} to="/signup">ici</Link>
+      </RedirectSignup>
+      // TODO сверху и снизу, вариант сверху читается и выглядит лучше
       <RedirectSignup>Pas encore inscrit ? Créez un compte <Link style={linkStyle} to="/signup">ici</Link></RedirectSignup>
     </>
   )
