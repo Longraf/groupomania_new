@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { MainImagePosts, LiElement, UlElement } from "../utils/style/Posts"
+import { LiElement, UlElement } from "../utils/style/Posts"
 import { NavCreatePosts, NavTitle, NavShape, NavElementLogoutPosts, NavElementDeletePosts } from "../utils/style/Navbars"
 import { useNavigate } from "react-router-dom";
 
@@ -55,7 +55,7 @@ console.log(err);
 }, []);*/
 
   return (
-    <><MainImagePosts>
+    <>
       <NavShape>
         <NavTitle>Publications</NavTitle>
         <Link style={linkStyle} to="/create-post"><NavCreatePosts>Créer une publication</NavCreatePosts></Link>
@@ -69,7 +69,7 @@ console.log(err);
           )
           )}
       </UlElement>
-    </MainImagePosts>
+    
     </>
   );
 }

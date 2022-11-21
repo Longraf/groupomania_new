@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import img from "../../assets/see-one.jpg";
+//import img from "../../assets/see-one.jpg";
 import colors from "./colors";
 
-export const MainImageSeeOne = styled.div`
-  background: url(${img}) no-repeat center/cover;
-  height: 100vh;
-  width: 100%;
-`;
+// export const MainImageSeeOne = styled.div`
+//   background: url(${img}) no-repeat center/cover;
+//   height: 100vh;
+//   width: 100%;
+// `;
 export const PostCard = styled.div`
   position: fixed;
   left: 23%;
@@ -189,11 +189,11 @@ export const Like = styled.div`
   position: relative;
   left: 0%;
   font-size: 40px;
-  color: white;
+  color: black;
   display: inline-block;
   cursor: pointer;
   &:hover {
-    color: ${colors.secondary};
+    color: red;
   }
   @media (max-width: 768px) {
     left: 100%;

@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { AiOutlineCheck } from 'react-icons/ai';
 import React, { useState, useEffect } from "react";
-import { MainImageModify, FormStyle, InputStyle, Textarea, ValidateStyle, LabelStyle, InputNone } from "../utils/style/Create&Modify"
+import {  FormStyle, InputStyle, Textarea, ValidateStyle, LabelStyle, InputNone } from "../utils/style/Create&Modify"
 import { NavSeePostsModify, NavTitle, NavShape, NavElementLogoutModify, NavElementDeleteModify } from "../utils/style/Navbars"
 import { TbWorld } from "react-icons/tb"
 
@@ -62,7 +62,7 @@ const Modify = () => {
 
   return (
     <>
-      <MainImageModify>
+      
         <NavShape>
           <NavTitle>Modifier</NavTitle>
           <Link style={linkStyle} to="/my-posts"><NavSeePostsModify>Voir les publications</NavSeePostsModify></Link>
@@ -87,7 +87,7 @@ const Modify = () => {
             <AiOutlineCheck />
           </ValidateStyle>
         </FormStyle>
-      </MainImageModify>
+      
     </>
   );
 };

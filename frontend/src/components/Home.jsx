@@ -31,7 +31,7 @@ const Home = () => {
     <>
       <MainImageLogin></MainImageLogin>
       <SuperContainer>
-        <Groupomania><InsistOnBlue>Groupo</InsistOnBlue>mania</Groupomania>
+        <Groupomania>Groupomania</Groupomania>
         <LoginCard>
           <MainTitle>Se connecter</MainTitle>
           <form onSubmit={handleSubmit(onSubmit)}>

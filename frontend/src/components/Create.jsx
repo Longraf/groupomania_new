@@ -3,7 +3,7 @@ import axios from "axios"
 import { useForm } from "react-hook-form";
 import { AiOutlineCheck } from 'react-icons/ai'
 import React, { useRef } from 'react'
-import { MainImageCreate, FormStyle, InputStyle, Textarea, ValidateStyle, LabelStyle, InputNone } from "../utils/style/Create&Modify"
+import {  FormStyle, InputStyle, Textarea, ValidateStyle, LabelStyle, InputNone } from "../utils/style/Create&Modify"
 import { NavSeePosts, NavTitle, NavShape, NavElementLogoutCreate, NavElementDeleteCreate } from "../utils/style/Navbars"
 import { TbWorld } from "react-icons/tb"
 
@@ -50,7 +50,7 @@ const Edit = () => {
 
   return (
     <>
-      <MainImageCreate>
+      
         <NavShape>
           <NavTitle>Créer</NavTitle>
           <Link style={linkStyle} to="/my-posts"><NavSeePosts>Voir les publications</NavSeePosts></Link>
@@ -66,7 +66,7 @@ const Edit = () => {
             <AiOutlineCheck />
           </ValidateStyle>
         </FormStyle>
-      </MainImageCreate>
+      
     </>
   )
 }

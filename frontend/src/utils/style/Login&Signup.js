@@ -15,7 +15,7 @@ export const RedirectSignup = styled.p`
   bottom: 0%;
   left: 1%;
   font-size: 30px;
-  color: ${colors.primary};
+  color: black;
   @media (max-width: 820px) {
     bottom: 2%;
   }

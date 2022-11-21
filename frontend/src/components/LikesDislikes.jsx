@@ -21,7 +21,7 @@ const LikesDislikes = ({ post }) => {
     const numberLikes = { like: likeActive ? 0 : 1 };
     axios.post(`http://localhost:4000/api/posts/${params.id}/like`, numberLikes).then((res) => {
       setLikeActive(res.data.likeActive)
-      console.log("test" + res.data);
+      //console.log("test" + res.data);
       if (likeActive) {
         setLike(like - 1);
       } else {
